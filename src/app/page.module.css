@@ -150,6 +150,13 @@
 /* Overview Section */
 .overviewSection {
   background-color: var(--bg-primary);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/images/office-1.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .overviewContainer {

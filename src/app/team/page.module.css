@@ -3,10 +3,16 @@
 }
 
 .header {
-  padding: 10rem 0 4rem;
+  padding: 12rem 0 6rem;
   background-color: var(--bg-dark);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('/images/team-2.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--color-pure-white);
   text-align: center;
+  position: relative;
 }
 
 .pageTitle {
@@ -103,6 +109,11 @@
 /* Professional Team */
 .profSection {
   background-color: var(--bg-dark);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('/images/office 2.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--color-pure-white);
   border-top: 1px solid var(--color-gray-slate);
 }
