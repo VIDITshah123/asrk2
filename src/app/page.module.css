@@ -22,7 +22,16 @@
 
 .heroImage {
   object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.heroImage.active {
   opacity: 0.6;
+}
+
+.heroImage.inactive {
+  opacity: 0;
 }
 
 .heroOverlay {

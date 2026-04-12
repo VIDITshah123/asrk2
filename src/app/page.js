@@ -1,21 +1,49 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import FadeIn from "@/components/FadeIn";
-// Instead of hardcoding image imports, we would ideally optimize them
-// For now relying on a placeholder or next/image using an external source or local copy
+
+const images = [
+  "/images/reception.jpeg",
+  "/images/client lobby 2.jpeg",
+  "/images/client lobby.jpeg",
+  "/images/office-1.jpeg",
+  "/images/office 2.jpeg",
+  "/images/office 3.jpeg",
+  "/images/library.jpeg",
+  "/images/conference room 1.jpeg",
+  "/images/conference room 2.jpeg"
+];
 
 export default function Home() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // 5 seconds interval
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className={styles.main}>
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroOverlay}></div>
-        {/* Placeholder for high-res hero background image */}
         <div className={styles.heroBackground}>
-           {/* If an image from /images is moved to public: <Image src="/images/hero.jpg" fill alt="ARSK Hero" className={styles.heroImage} /> */}
+           {images.map((imgSrc, idx) => (
+             <Image 
+               key={idx}
+               src={imgSrc} 
+               fill 
+               priority={idx === 0}
+               alt={`ARSK Corporate Office ${idx + 1}`}
+               className={`${styles.heroImage} ${idx === currentImageIndex ? styles.active : styles.inactive}`} 
+             />
+           ))}
         </div>
         
         <div className={`container ${styles.heroContent}`}>
