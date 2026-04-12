@@ -3,8 +3,14 @@
 }
 
 .header {
-  padding: 10rem 0 4rem;
+  padding: 12rem 0 6rem;
   background-color: var(--bg-dark);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('/images/reception3.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   color: var(--color-pure-white);
 }
 
