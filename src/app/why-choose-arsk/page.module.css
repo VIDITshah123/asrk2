@@ -1,0 +1,92 @@
+.main {
+  width: 100%;
+}
+
+.header {
+  padding: 12rem 0 6rem;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.pageTitle {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.pageSubtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 800px;
+  font-family: var(--font-body);
+}
+
+.emphasis {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: var(--text-primary);
+}
+
+.reasonsSection {
+  background-color: var(--bg-dark);
+  color: var(--color-pure-white);
+  padding: 6rem 0;
+}
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.reasonCard {
+  border-top: 1px solid var(--color-gray-slate);
+  padding-top: 2rem;
+}
+
+.reasonTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-pure-white);
+  font-family: var(--font-heading);
+}
+
+.reasonDesc {
+  color: var(--color-gray-light);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.ctaWrapper {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.ctaBtn {
+  display: inline-block;
+  padding: 1.2rem 3rem;
+  border: 1px solid var(--color-pure-white);
+  color: var(--color-pure-white);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.ctaBtn:hover {
+  background-color: var(--color-pure-white);
+  color: var(--color-black);
+}
+
+@media (max-width: 900px) {
+  .pageTitle {
+    font-size: 3rem;
+  }
+  .reasonsGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

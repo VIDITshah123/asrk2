@@ -1,0 +1,124 @@
+.main {
+  width: 100%;
+}
+
+.parallaxHeader {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.parallaxImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.parallaxContent {
+  position: relative;
+  z-index: 1;
+  color: var(--color-pure-white);
+  width: 100%;
+}
+
+.pageTitle {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+.pageSubtitle {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  color: var(--color-gray-light);
+  max-width: 600px;
+}
+
+.contentSection {
+  background-color: var(--bg-primary);
+}
+
+.twoColumn {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 6rem;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  line-height: 1.1;
+  position: sticky;
+  top: 150px;
+}
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.prose p:first-child {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.valuesSection {
+  background-color: var(--bg-dark);
+  color: var(--color-pure-white);
+}
+
+.valuesTitle {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.valueCard {
+  border-top: 2px solid var(--color-gray-slate);
+  padding-top: 2rem;
+}
+
+.valueCard h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--color-pure-white);
+}
+
+.valueCard p {
+  color: var(--color-gray-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .twoColumn {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .sectionTitle {
+    position: static;
+  }
+  .valuesGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

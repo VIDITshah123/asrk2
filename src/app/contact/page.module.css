@@ -1,0 +1,136 @@
+.main {
+  width: 100%;
+}
+
+.header {
+  padding: 10rem 0 4rem;
+  background-color: var(--bg-dark);
+  color: var(--color-pure-white);
+}
+
+.pageTitle {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.pageSubtitle {
+  font-size: 1.25rem;
+  color: var(--color-gray-light);
+  font-family: var(--font-body);
+}
+
+.contactSection {
+  background-color: var(--bg-primary);
+}
+
+.twoColumn {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 6rem;
+}
+
+.infoBlock {
+  margin-bottom: 3rem;
+}
+
+.infoBlock h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--color-gray-light);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.infoBlock p {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.form {
+  background-color: var(--bg-secondary);
+  padding: 4rem;
+  border-top: 3px solid var(--color-black);
+}
+
+.formGroup {
+  margin-bottom: 2rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 1rem 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-gray-slate);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--text-primary);
+  transition: border-color 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-bottom-color: var(--color-black);
+}
+
+.submitBtn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-color: var(--color-black);
+  color: var(--color-pure-white);
+  border: none;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.submitBtn:hover {
+  opacity: 0.8;
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.successMsg {
+  margin-top: 1.5rem;
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.errorMsg {
+  margin-top: 1.5rem;
+  color: #c62828;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .twoColumn {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .form {
+    padding: 2rem;
+  }
+}

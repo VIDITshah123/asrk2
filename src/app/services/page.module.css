@@ -1,0 +1,115 @@
+.main {
+  width: 100%;
+}
+
+.header {
+  padding: 12rem 0 6rem;
+  background-color: var(--color-black);
+  color: var(--color-pure-white);
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.pageSubtitle {
+  font-size: 1.25rem;
+  color: var(--color-gray-light);
+}
+
+.servicesSection {
+  background-color: var(--bg-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+}
+
+.card {
+  padding: 3rem;
+  background-color: var(--bg-secondary);
+  border-top: 2px solid var(--color-black);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.cardDesc {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.link, .backLink {
+  color: var(--text-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  transition: opacity 0.3s ease;
+}
+
+.link:hover, .backLink:hover {
+  opacity: 0.6;
+}
+
+/* Detail specific */
+.detailSection {
+  background-color: var(--bg-primary);
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.detailSubtitle {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.detailDesc {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+.detailBody {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin-bottom: 4rem;
+}
+
+.cta {
+  border-top: 1px solid var(--color-gray-light);
+  padding-top: 3rem;
+}
+
+.contactBtn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: var(--color-black);
+  color: var(--color-pure-white);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: opacity 0.3s ease;
+}
+
+.contactBtn:hover {
+  opacity: 0.8;
+}

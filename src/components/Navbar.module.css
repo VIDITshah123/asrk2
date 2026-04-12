@@ -1,0 +1,64 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.4s ease;
+  background-color: transparent;
+  padding: 2rem 0;
+  color: var(--text-light); /* Assuming initial hero is dark or has dark image */
+}
+
+.header.scrolled {
+  background-color: var(--bg-primary);
+  padding: 1rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  color: var(--text-primary);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.navLinks a {
+  transition: opacity 0.3s ease;
+  text-transform: uppercase;
+}
+
+.navLinks a:hover {
+  opacity: 0.6;
+}
+
+.cta {
+  border: 1px solid currentColor;
+  padding: 0.6rem 1.5rem;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background-color: currentColor;
+  color: var(--bg-primary);
+  opacity: 1 !important;
+}

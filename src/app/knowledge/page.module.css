@@ -1,0 +1,130 @@
+.main {
+  width: 100%;
+}
+
+.header {
+  padding: 10rem 0 4rem;
+  background-color: var(--bg-dark);
+  color: var(--color-pure-white);
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.pageSubtitle {
+  font-size: 1.25rem;
+  color: var(--color-gray-light);
+}
+
+.cmsSection {
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.cmsNotice {
+  padding: 4rem;
+  text-align: center;
+  background-color: var(--bg-secondary);
+  border: 1px dashed var(--color-gray-slate);
+}
+
+.cmsNotice h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cmsNotice p {
+  color: var(--text-secondary);
+}
+
+.faqSection {
+  background-color: var(--bg-secondary);
+}
+
+.sectionTitle {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.faqWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faqItem {
+  border-bottom: 1px solid var(--color-gray-slate);
+  cursor: pointer;
+}
+
+.faqHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.faqItem:hover .faqHeader {
+  color: var(--color-gray-slate);
+}
+
+.faqQuestion {
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 500;
+  max-width: 90%;
+}
+
+.faqIcon {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.faqBodyWrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faqItem.active .faqBodyWrapper {
+  max-height: 200px;
+}
+
+.faqItem.active .faqHeader {
+  color: var(--text-primary);
+}
+
+.faqAnswer {
+  padding-bottom: 1.5rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.ctaWrapper {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.contactBtn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 2.5rem;
+  border: 1px solid var(--color-black);
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contactBtn:hover {
+  background-color: var(--color-black);
+  color: var(--color-pure-white);
+}
