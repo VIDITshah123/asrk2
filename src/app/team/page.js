@@ -101,7 +101,7 @@ export default function Team() {
       <section className={`section ${styles.teamSection}`}>
         <div className="container">
           <h2 className={styles.sectionTitle}>Partners</h2>
-          <div className={styles.grid}>
+          <div className={styles.gridFour}>
             {partners.map((person, index) => (
               <div key={index} className={styles.card}>
                 <div className={styles.imageWrapper}>

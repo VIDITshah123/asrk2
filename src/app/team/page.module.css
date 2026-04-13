@@ -42,6 +42,24 @@
   gap: 3rem;
 }
 
+.gridFour {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1100px) {
+  .gridFour {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gridFour {
+    grid-template-columns: 1fr;
+  }
+}
+
 .card {
   display: flex;
   flex-direction: column;

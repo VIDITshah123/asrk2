@@ -25,11 +25,11 @@ export default function Navbar() {
           </Link>
         </div>
         <nav className={styles.navLinks}>
-          <Link href="/about">About Us</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/team">Our Team</Link>
-          <Link href="/knowledge">Knowledge Center</Link>
-          <Link href="/contact" className={styles.cta}>
+          <Link href="/#about">About Us</Link>
+          <Link href="/#services">Services</Link>
+          <Link href="/#team">Our Team</Link>
+          <Link href="/#knowledge">Knowledge Center</Link>
+          <Link href="/#contact" className={styles.cta}>
             Contact Us
           </Link>
         </nav>

@@ -5,6 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import FadeIn from "@/components/FadeIn";
+import AboutPage from "../about/page";
+import ServicesPage from "../services/page";
+import TeamPage from "../team/page";
+import KnowledgePage from "../knowledge/page";
+import ContactPage from "../contact/page";
 
 const images = [
   "/images/reception.jpeg",
@@ -97,10 +102,13 @@ export default function Home() {
           <FadeIn delay={0.2}>
             <div className={styles.overviewBody}>
               <p>
-                At ARSK & Associates, we understand that true wealth and corporate resilience are constructed on foundations of irrefutable precision. Our firm caters to an exclusive echelon of enterprises, offering bespoke audit, tax, and strategic advisory services.
+                <strong>Forty years of practice. One firm that handles all of it.</strong>
               </p>
               <p>
-                Operating from our headquarters in Kolkata with an expanding presence in Mumbai, our mandate is simple: uncompromised quality and unmatched discretion.
+                ARSK & Associates is a Chartered Accountant firm established in 1984. We work with founders, promoters, family businesses, and multinationals navigating India's complex regulatory and commercial landscape — from day-to-day compliance to high-stakes transactions and disputes.
+              </p>
+              <p>
+                With partner-led teams in Kolkata and Mumbai, and seven qualified partners across audit, taxation, corporate law, and advisory, we bring the breadth of a large firm with the accountability of a practice where your partner picks up the phone.
               </p>
               <Link href="/about" className={styles.linkArrow}>
                 Discover Our Heritage →
@@ -109,6 +117,13 @@ export default function Home() {
           </FadeIn>
         </div>
       </section>
+
+      {/* Embedded Single Page Application Sections */}
+      <div id="about"><AboutPage /></div>
+      <div id="services"><ServicesPage /></div>
+      <div id="team"><TeamPage /></div>
+      <div id="knowledge"><KnowledgePage /></div>
+      <div id="contact"><ContactPage /></div>
     </div>
   );
 }
