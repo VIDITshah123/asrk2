@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--bg-dark);
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95)), url('/images/reception3.jpeg'); */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95)), url('/images/client lobby 2.jpeg'); */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,7 +48,8 @@
   color: var(--color-white);
 }
 
-.column a, .column p {
+.column a,
+.column p {
   color: var(--color-gray-light);
   font-size: 0.95rem;
   transition: color 0.3s ease;

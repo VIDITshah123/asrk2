@@ -36,7 +36,7 @@ const quotes = [
 const galleryImages = [
   "/images/conference room 1.jpeg",
   "/images/library.jpeg",
-  "/images/reception.jpeg",
+  "/images/conference room 2.jpeg",
   "/images/office-1.jpeg",
   "/images/client lobby.jpeg",
   "/images/office 2.jpeg"
@@ -65,35 +65,33 @@ export default function Home() {
     <div className={styles.main}>
       {/* Quote Carousel */}
       <section className={styles.carouselSection}>
-        <div className={styles.carouselWrap}>
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentIndex}
-              initial={{ x: 300, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              exit={{ x: -300, opacity: 0 }}
-              transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              drag="x"
-              dragConstraints={{ left: 0, right: 0 }}
-              dragElastic={0.2}
-              onDragEnd={handleDragEnd}
-              className={styles.carouselCard}
-            >
-              <div className={styles.carouselImageBox}>
-                <Image
-                  src={quotes[currentIndex].image}
-                  alt={quotes[currentIndex].title}
-                  fill
-                  className={styles.carouselImage}
-                  priority
-                />
+        <div className={styles.carouselContainer}>
+          <motion.div
+            className={styles.carouselTrack}
+            animate={{ x: `-${currentIndex * 100}%` }}
+            transition={{ type: "spring", stiffness: 100, damping: 20 }}
+          >
+            {quotes.map((quote, index) => (
+              <div key={quote.id} className={styles.carouselSlide}>
+                <div className={styles.carouselCard}>
+                  <div className={styles.carouselImageBox}>
+                    <Image
+                      src={quote.image}
+                      alt={quote.title}
+                      width={500}
+                      height={600}
+                      className={styles.carouselImage}
+                      priority={index === 0}
+                    />
+                  </div>
+                  <div className={styles.carouselText}>
+                    <h2 className={styles.panelTitle}>{quote.title}</h2>
+                    <p className={styles.panelText}>{quote.text}</p>
+                  </div>
+                </div>
               </div>
-              <div className={styles.carouselText}>
-                <h2 className={styles.panelTitle}>{quotes[currentIndex].title}</h2>
-                <p className={styles.panelText}>{quotes[currentIndex].text}</p>
-              </div>
-            </motion.div>
-          </AnimatePresence>
+            ))}
+          </motion.div>
         </div>
         <div className={styles.carouselDots}>
           {quotes.map((_, index) => (
@@ -135,36 +133,37 @@ export default function Home() {
 
       {/* Brief Overview Section */}
       <section className={styles.overviewSection}>
-        <div className={styles.overviewBgWrap}>
-          <Image
-            src="/images/office-1.jpeg"
-            alt="Office"
-            fill
-            className={styles.overviewBgImage}
-            priority
-          />
-          <div className={styles.overviewImageOverlay} />
-        </div>
         <div className={`container ${styles.overviewContainer}`}>
-          <FadeIn>
-            <h2 className={styles.sectionTitle}>Precision in Every Detail</h2>
-          </FadeIn>
-          <FadeIn delay={0.2}>
-            <div className={styles.overviewBody}>
-              <p>
-                <strong>Forty years of practice. One firm that handles all of it.</strong>
-              </p>
-              <p>
-                ARSK & Associates is a Chartered Accountant firm established in 1984. We work with founders, promoters, family businesses, and multinationals navigating India's complex regulatory and commercial landscape — from day-to-day compliance to high-stakes transactions and disputes.
-              </p>
-              <p>
-                With partner-led teams in Kolkata and Mumbai, and seven qualified partners across audit, taxation, corporate law, and advisory, we bring the breadth of a large firm with the accountability of a practice where your partner picks up the phone.
-              </p>
-              <Link href="/about" className={styles.linkArrow}>
-                Discover Our Heritage →
-              </Link>
-            </div>
-          </FadeIn>
+          <div className={styles.overviewImageSide}>
+            <FadeIn>
+              <Image
+                src="/images/office-1.jpeg"
+                alt="ARSK Office"
+                width={600}
+                height={500}
+                className={styles.staticOverviewImage}
+              />
+            </FadeIn>
+          </div>
+          <div className={styles.overviewTextSide}>
+            <FadeIn delay={0.2}>
+              <h2 className={styles.sectionTitle}>Precision in Every Detail</h2>
+              <div className={styles.overviewBody}>
+                <p>
+                  ARSK & Associates was established as a partnership firm of Chartered Accountants in 1984, with a founding commitment to delivering independent, objective, and technically sound counsel to business clients.
+                </p>
+                <p>
+                  Four decades later, the firm's core commitments have not changed — but the practice has grown significantly in both depth and scope. Today, ARSK operates from offices in Kolkata and Mumbai, with a team of seven partners and a professional staff that spans Chartered Accountants, Company Secretaries, and advisory specialists.
+                </p>
+                <p>
+                  We serve founders and promoters of growing companies, family businesses navigating succession and governance, CFOs of mid-market enterprises who need a reliable sounding board, and multinationals entering or operating in India. Our clients come to us because they want advisors who understand their business — not just their balance sheet.
+                </p>
+                <Link href="/about" className={styles.linkArrow}>
+                  Discover Our Heritage →
+                </Link>
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
