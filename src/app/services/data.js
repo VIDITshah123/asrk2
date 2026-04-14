@@ -1,8 +1,35 @@
 export const servicesData = {
   "audit": {
     title: "Audit & Assurance",
-    description: "Statutory audits, internal audits, and assurance services tailored for complex corporate structures.",
-    content: "Our audit practice is designed not just to ensure compliance but to provide boards and management with a clear, uncompromising view of financial realities. We handle statutory audits for large corporates, internal audits focusing on risk mitigation, and specialized assurance engagements."
+    description: "An audit is only as useful as the judgment behind it. We bring technical rigour, sector context, and a genuine understanding of your business to every audit engagement — so that the output is meaningful, not just compliant.",
+    content: `VALUE PROPOSITION
+An audit is only as useful as the judgment behind it. We bring technical rigour, sector context, and a genuine understanding of your business to every audit engagement — so that the output is meaningful, not just compliant.
+
+CLIENT PAIN POINTS
+• 'Our statutory audit feels like a checkbox exercise — we never get useful feedback.'
+• 'We had a forensic issue and did not know who to call.'
+• 'Our concurrent audit is not catching what it should be catching.'
+• 'We need a certification for a specific transaction, but our existing auditor is not familiar with the requirements.'
+
+HOW WE HELP
+ARSK's attestation and audit practice covers the full range of statutory and non-statutory audit work:
+• Statutory Audits under the Companies Act
+• Tax Audits under the Income Tax Act
+• Forensic Audits and Special Investigation Audits
+• Compliance Audits
+• Secretarial Practice Reviews
+• Translation and Certification of Accounts
+• Concurrent Audits
+• Trust and Retention Account Audits
+• Management Audits
+• Information Systems Audit and IS Security Attestation
+Our audit team is led by qualified partners who bring both technical depth and commercial awareness. We do not treat audit as a commodity engagement.
+
+OUTCOMES
+• Audit reports that reflect the actual condition of your business — useful to boards, lenders, and regulators.
+• Early identification of control gaps, compliance risks, and financial irregularities.
+• Credible certifications accepted by Indian regulatory bodies and counterparties.`,
+    image: "/images/conference room 1.jpeg"
   },
   "direct-tax": {
     title: "Direct & International Tax",
