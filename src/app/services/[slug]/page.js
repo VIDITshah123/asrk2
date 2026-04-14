@@ -7,6 +7,11 @@ import { servicesData } from "../data";
 import styles from "../page.module.css";
 import { notFound } from "next/navigation";
 
+const serviceImages = {
+  "audit": ["/images/conference room 1.jpeg", "/images/library.jpeg", "/images/office-1.jpeg"],
+  "default": ["/images/office-1.jpeg", "/images/conference room 1.jpeg"]
+};
+
 function parseContent(content) {
   const sections = [];
   const lines = content.split('\n');
@@ -47,6 +52,7 @@ export default function ServiceDetail({ params }) {
   }
 
   const serviceSections = parseContent(service.content);
+  const images = serviceImages[slug] || serviceImages["default"];
 
   return (
     <div className={styles.main}>
@@ -87,6 +93,23 @@ export default function ServiceDetail({ params }) {
                 </div>
               </div>
             ))}
+            
+            <div className={styles.gallerySection}>
+              <h2 className={styles.sectionTitle}>Our Workspace</h2>
+              <div className={styles.galleryGrid}>
+                {images.map((img, idx) => (
+                  <div key={idx} className={styles.galleryItem}>
+                    <Image
+                      src={img}
+                      alt={`Office ${idx + 1}`}
+                      fill
+                      className={styles.galleryImg}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+
             <div className={styles.cta}>
               <Link href="/contact" className={styles.contactBtn}>Contact Us</Link>
             </div>

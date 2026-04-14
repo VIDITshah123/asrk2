@@ -33,6 +33,15 @@ const quotes = [
   }
 ];
 
+const galleryImages = [
+  "/images/conference room 1.jpeg",
+  "/images/library.jpeg",
+  "/images/reception.jpeg",
+  "/images/office-1.jpeg",
+  "/images/client lobby.jpeg",
+  "/images/office 2.jpeg"
+];
+
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -156,6 +165,29 @@ export default function Home() {
               </Link>
             </div>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section className={`section ${styles.gallerySection}`}>
+        <div className="container">
+          <FadeIn>
+            <h2 className={styles.galleryTitle}>Our World</h2>
+          </FadeIn>
+          <div className={styles.galleryGrid}>
+            {galleryImages.map((img, idx) => (
+              <FadeIn key={idx} delay={idx * 0.1}>
+                <div className={styles.galleryItem}>
+                  <Image
+                    src={img}
+                    alt={`Office ${idx + 1}`}
+                    fill
+                    className={styles.galleryImg}
+                  />
+                </div>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
 
