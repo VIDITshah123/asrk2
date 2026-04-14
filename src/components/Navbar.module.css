@@ -6,7 +6,7 @@
   z-index: 1000;
   transition: all 0.4s ease;
   background-color: transparent;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   color: var(--text-light); /* Assuming initial hero is dark or has dark image */
 }
 
