@@ -41,13 +41,13 @@ export default function Contact() {
   };
 
   return (
-    <div className={styles.main}>
-      <section className={styles.header}>
-        <div className="container">
-          <h1 className={styles.pageTitle}>Private Consultation</h1>
-          <p className={styles.pageSubtitle}>For matters requiring senior attention and strict confidentiality.</p>
-        </div>
-      </section>
+    // <div className={styles.main}>
+    //   <section className={styles.header}>
+    //     <div className="container">
+    //       <h1 className={styles.pageTitle}>Private Consultation</h1>
+    //       <p className={styles.pageSubtitle}>For matters requiring senior attention and strict confidentiality.</p>
+    //     </div>
+    //   </section>
 
       <section className={`section ${styles.contactSection}`}>
         <div className={`container ${styles.twoColumn}`}>
@@ -136,6 +136,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </div>
+    // </div>
   );
 }

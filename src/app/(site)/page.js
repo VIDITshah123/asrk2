@@ -167,35 +167,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section className={`section ${styles.gallerySection}`}>
-        <div className="container">
-          <FadeIn>
-            <h2 className={styles.galleryTitle}>Our World</h2>
-          </FadeIn>
-          <div className={styles.galleryGrid}>
-            {galleryImages.map((img, idx) => (
-              <FadeIn key={idx} delay={idx * 0.1}>
-                <div className={styles.galleryItem}>
-                  <Image
-                    src={img}
-                    alt={`Office ${idx + 1}`}
-                    fill
-                    className={styles.galleryImg}
-                  />
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Embedded Single Page Application Sections */}
       <div id="about"><AboutPage /></div>
-      <div id="services"><ServicesPage /></div>
       <div id="team"><TeamPage /></div>
+      <div id="services"><ServicesPage /></div>
       <div id="knowledge"><KnowledgePage /></div>
-      <div id="contact"><ContactPage /></div>
+      {/* <div id="contact"><ContactPage /></div> */}
     </div>
   );
 }

@@ -76,7 +76,7 @@ export default function Knowledge() {
 
           <div className={styles.ctaWrapper}>
             <p>Still have questions?</p>
-            <Link href="/contact" className={styles.contactBtn}>Contact us to get started</Link>
+            <p><Link href="/contact" >Contact us to get started</Link></p>
           </div>
         </div>
       </section>
