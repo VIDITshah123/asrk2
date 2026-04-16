@@ -111,20 +111,20 @@ export default function Home() {
           <FadeIn>
             <div className={styles.logosWrap}>
               <div className={styles.trustItem}>
-                <span className={styles.trustNumber}>25+</span>
-                <span className={styles.trustLabel}>Years of Legacy</span>
-              </div>
-              <div className={styles.trustItem}>
-                <span className={styles.trustNumber}>Tier 1</span>
-                <span className={styles.trustLabel}>Bank Empanelments</span>
-              </div>
-              <div className={styles.trustItem}>
-                <span className={styles.trustNumber}>Pan-India</span>
-                <span className={styles.trustLabel}>Service Reach</span>
+                <span className={styles.trustNumber}>₹10,000+</span>
+                <span className={styles.trustLabel}>Crores in Transactions</span>
               </div>
               <div className={styles.trustItem}>
                 <span className={styles.trustNumber}>100+</span>
-                <span className={styles.trustLabel}>Corporate Clients</span>
+                <span className={styles.trustLabel}>Tax Cases Handled</span>
+              </div>
+              <div className={styles.trustItem}>
+                <span className={styles.trustNumber}>15+</span>
+                <span className={styles.trustLabel}>Practice Areas</span>
+              </div>
+              <div className={styles.trustItem}>
+                <span className={styles.trustNumber}>Expertise</span>
+                <span className={styles.trustLabel}>Multi-Jurisdictional</span>
               </div>
             </div>
           </FadeIn>
