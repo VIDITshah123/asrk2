@@ -22,6 +22,22 @@ export default function About() {
         <div className={`container ${styles.twoColumn}`}>
           <div className={styles.columnLeft}>
             <h2 className={styles.sectionTitle}>Built on Trust, Sustained by Precision</h2>
+            <div className={styles.aboutImageStack}>
+              <Image
+                src="/images/conference room 1.jpeg"
+                alt="ARSK Conference Room"
+                width={420}
+                height={300}
+                className={styles.aboutImg}
+              />
+              {/* <Image
+                src="/images/library.jpeg"
+                alt="ARSK Library"
+                width={420}
+                height={260}
+                className={styles.aboutImgOffset}
+              /> */}
+            </div>
           </div>
           <div className={styles.columnRight}>
             <div className={styles.prose}>
@@ -46,14 +62,23 @@ export default function About() {
           <p className={styles.valuesSubtitle}>Demonstrating consistent excellence across all practice areas</p>
           <div className={styles.valuesGrid}>
             <div className={styles.valueCard}>
+              <div className={styles.valueCardImage}>
+                <Image src="/images/office-1.jpeg" alt="Complex Structuring" fill className={styles.valueCardImg} />
+              </div>
               <h3>Complex Structuring</h3>
               <p>Successfully handled multi-billion rupee restructuring with regulatory compliance across SEBI, RBI, and tax authorities.</p>
             </div>
             <div className={styles.valueCard}>
+              <div className={styles.valueCardImage}>
+                <Image src="/images/conference room 2.jpeg" alt="Litigation Excellence" fill className={styles.valueCardImg} />
+              </div>
               <h3>Litigation Excellence</h3>
               <p>100% success rate in concluded tax matters with no prosecutions imposed.</p>
             </div>
             <div className={styles.valueCard}>
+              <div className={styles.valueCardImage}>
+                <Image src="/images/client lobby.jpeg" alt="Cross-Border Expertise" fill className={styles.valueCardImg} />
+              </div>
               <h3>Cross-Border Expertise</h3>
               <p>Multi-jurisdictional experience spanning Asia, Europe, and Middle East.</p>
             </div>

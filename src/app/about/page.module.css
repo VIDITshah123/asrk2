@@ -76,6 +76,41 @@
   line-height: 1.6;
 }
 
+/* About Image Stack */
+.aboutImageStack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.aboutImg {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  filter: grayscale(20%);
+  transition: filter 0.5s ease;
+}
+
+.aboutImg:hover {
+  filter: grayscale(0%);
+}
+
+.aboutImgOffset {
+  width: 85%;
+  height: auto;
+  align-self: flex-end;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  filter: grayscale(20%);
+  transition: filter 0.5s ease;
+}
+
+.aboutImgOffset:hover {
+  filter: grayscale(0%);
+}
+
 .valuesSection {
   background-color: var(--bg-dark);
   color: var(--color-pure-white);
@@ -116,6 +151,26 @@
 .valueCard p {
   color: var(--color-gray-light);
   line-height: 1.6;
+}
+
+.valueCardImage {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border-bottom: none;
+}
+
+.valueCardImg {
+  object-fit: cover;
+  filter: grayscale(30%);
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.valueCard:hover .valueCardImg {
+  filter: grayscale(0%);
+  transform: scale(1.03);
 }
 
 @media (max-width: 900px) {
