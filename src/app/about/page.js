@@ -2,6 +2,7 @@
 
 import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -30,13 +31,9 @@ export default function About() {
                 height={300}
                 className={styles.aboutImg}
               />
-              {/* <Image
-                src="/images/library.jpeg"
-                alt="ARSK Library"
-                width={420}
-                height={260}
-                className={styles.aboutImgOffset}
-              /> */}
+              <Link href="/contact" className={styles.contactBtn}>
+                Request a Consultation →
+              </Link>
             </div>
           </div>
           <div className={styles.columnRight}>

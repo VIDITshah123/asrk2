@@ -111,6 +111,25 @@
   filter: grayscale(0%);
 }
 
+.contactBtn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  border: 1px solid var(--color-pure-white);
+  color: var(--color-pure-white);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contactBtn:hover {
+  background-color: var(--color-pure-white);
+  color: var(--color-black);
+}
+
 .valuesSection {
   background-color: var(--bg-dark);
   color: var(--color-pure-white);
