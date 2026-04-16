@@ -42,19 +42,20 @@ export default function About() {
       {/* Values Section */}
       <section className={`section ${styles.valuesSection}`}>
         <div className="container">
-          <h2 className={styles.valuesTitle}>Our Pillars of Practice</h2>
+          <h2 className={styles.valuesTitle}>Proven Track Record</h2>
+          <p className={styles.valuesSubtitle}>Demonstrating consistent excellence across all practice areas</p>
           <div className={styles.valuesGrid}>
             <div className={styles.valueCard}>
-              <h3>Integrity</h3>
-              <p>The cornerstone of our practice. We adhere to the highest standards of professional and moral diligence.</p>
+              <h3>Complex Structuring</h3>
+              <p>Successfully handled multi-billion rupee restructuring with regulatory compliance across SEBI, RBI, and tax authorities.</p>
             </div>
             <div className={styles.valueCard}>
-              <h3>Exclusivity</h3>
-              <p>We work with an exclusive clientele, ensuring personalized and undivided attention to complex mandates.</p>
+              <h3>Litigation Excellence</h3>
+              <p>100% success rate in concluded tax matters with no prosecutions imposed.</p>
             </div>
             <div className={styles.valueCard}>
-              <h3>Precision</h3>
-              <p>Absolute accuracy in execution, from statutory audits to cross-border tax structuring.</p>
+              <h3>Cross-Border Expertise</h3>
+              <p>Multi-jurisdictional experience spanning Asia, Europe, and Middle East.</p>
             </div>
           </div>
         </div>

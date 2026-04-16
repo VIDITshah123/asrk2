@@ -84,7 +84,16 @@
 .valuesTitle {
   text-align: center;
   font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.valuesSubtitle {
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--color-gray-light);
   margin-bottom: 4rem;
+  letter-spacing: 0.02em;
 }
 
 .valuesGrid {
