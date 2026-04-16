@@ -8,8 +8,13 @@ import styles from "../page.module.css";
 import { notFound } from "next/navigation";
 
 const serviceImages = {
-  "audit": ["/images/conference room 1.jpeg", "/images/library.jpeg", "/images/office-1.jpeg"],
-  "default": ["/images/office-1.jpeg", "/images/conference room 1.jpeg"]
+  "audit":           ["/images/conference room 1.jpeg", "/images/library.jpeg", "/images/office-1.jpeg"],
+  "direct-tax":      ["/images/library.jpeg", "/images/conference room 2.jpeg", "/images/office 2.jpeg"],
+  "indirect-tax":    ["/images/office-1.jpeg", "/images/client lobby.jpeg", "/images/conference room 1.jpeg"],
+  "advisory":        ["/images/office 2.jpeg", "/images/conference room 2.jpeg", "/images/client lobby 2.jpeg"],
+  "outsourced-cfo":  ["/images/conference room 2.jpeg", "/images/office 3.jpeg", "/images/library.jpeg"],
+  "nri-advisory":    ["/images/client lobby.jpeg", "/images/library.jpeg", "/images/office-1.jpeg"],
+  "management-audit":["/images/library.jpeg", "/images/conference room 1.jpeg", "/images/office 3.jpeg"],
 };
 
 function parseContent(content) {
@@ -52,7 +57,7 @@ export default function ServiceDetail({ params }) {
   }
 
   const serviceSections = parseContent(service.content);
-  const images = serviceImages[slug] || serviceImages["default"];
+  const images = serviceImages[slug] || ["/images/office-1.jpeg", "/images/conference room 1.jpeg", "/images/library.jpeg"];
 
   return (
     <div className={styles.main}>
