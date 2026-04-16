@@ -1,8 +1,6 @@
 export const servicesData = {
   "audit": {
     title: "Audit & Assurance",
-    description: "An audit is only as useful as the judgment behind it. We bring technical rigour, sector context, and a genuine understanding of your business to every audit engagement — so that the output is meaningful, not just compliant.",
-    image: "/images/conference room 1.jpeg",
     content: `VALUE PROPOSITION
 An audit is only as useful as the judgment behind it. We bring technical rigour, sector context, and a genuine understanding of your business to every audit engagement — so that the output is meaningful, not just compliant.
 
@@ -34,8 +32,6 @@ OUTCOMES
 
   "direct-tax": {
     title: "Direct & International Taxation",
-    description: "Tax disputes, international structures, and transfer pricing arrangements require advisors who are both technically current and experienced in how Indian tax authorities actually operate. We have been representing clients in assessments and appellate proceedings since 1985.",
-    image: "/images/library.jpeg",
     content: `VALUE PROPOSITION
 Tax disputes, international structures, and transfer pricing arrangements require advisors who are both technically current and experienced in how Indian tax authorities actually operate. We have been representing clients in assessments and appellate proceedings since 1985.
 
@@ -66,8 +62,6 @@ OUTCOMES
 
   "indirect-tax": {
     title: "Indirect Taxation (GST)",
-    description: "GST compliance is not just about filing returns — it is about maintaining defensible positions across input credits, classification, valuation, and inter-state supply characterisation.",
-    image: "/images/office-1.jpeg",
     content: `VALUE PROPOSITION
 GST compliance is not just about filing returns — it is about maintaining defensible positions across input credits, classification, valuation, and inter-state supply characterisation. We manage indirect tax as a continuous advisory relationship, not a one-off filing task.
 
@@ -93,8 +87,6 @@ OUTCOMES
 
   "advisory": {
     title: "Corporate Advisory & Transaction Support",
-    description: "Every significant transaction involves tax, valuation, legal, and regulatory dimensions simultaneously. We coordinate across all of them, so you have one advisory relationship at the centre of your transaction.",
-    image: "/images/office 2.jpeg",
     content: `VALUE PROPOSITION
 Every significant transaction — an acquisition, a restructuring, a private equity round, a succession plan — involves tax, valuation, legal, and regulatory dimensions simultaneously. We coordinate across all of them, so you have one advisory relationship at the centre of your transaction rather than five disconnected ones.
 
@@ -126,8 +118,6 @@ OUTCOMES
 
   "outsourced-cfo": {
     title: "Outsourced CFO & Virtual Finance",
-    description: "A growing company often needs the strategic and operational finance capability of a CFO before it can justify a full-time one. Our virtual CFO service gives you experienced financial leadership — available as and when you need it.",
-    image: "/images/conference room 2.jpeg",
     content: `VALUE PROPOSITION
 A growing company often needs the strategic and operational finance capability of a CFO before it can justify a full-time one. Our virtual CFO service gives you experienced financial leadership — available as and when you need it, without the permanent overhead.
 
@@ -154,8 +144,6 @@ OUTCOMES
 
   "nri-advisory": {
     title: "NRI & Cross-Border Advisory",
-    description: "The intersection of Indian and foreign tax law is one of the most technically demanding areas of our practice. Whether you are an NRI, a foreign national, or an Indian business expanding abroad, we provide clear and compliant counsel.",
-    image: "/images/client lobby.jpeg",
     content: `VALUE PROPOSITION
 The intersection of Indian and foreign tax law is one of the most technically demanding areas of our practice. Whether you are an NRI planning a return to India, a foreign national employed here, or an Indian business expanding abroad, the regulatory and tax implications are significant — and the cost of getting them wrong is equally significant.
 
@@ -184,8 +172,6 @@ OUTCOMES
 
   "management-audit": {
     title: "Management Audit & Special Purpose Assignments",
-    description: "Beyond the statutory audit, a well-run business needs periodic independent review of its systems, processes, and internal controls. We deliver management and systems audits that produce actionable recommendations — not just observations.",
-    image: "/images/reception.jpeg",
     content: `VALUE PROPOSITION
 Beyond the statutory audit, a well-run business needs periodic independent review of its systems, processes, and internal controls. We deliver management and systems audits that produce actionable recommendations — not just observations.
 
