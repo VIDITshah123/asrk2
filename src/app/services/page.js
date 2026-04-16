@@ -11,8 +11,10 @@ export default function ServicesOverview() {
     <div className={styles.main}>
       <section className={styles.header}>
         <div className="container">
-          <h1 className={styles.pageTitle}>Our Services</h1>
-          <p className={styles.pageSubtitle}>Comprehensive, high-caliber solutions across tax, audit, and advisory.</p>
+          <h1 className={styles.pageTitle}>Our Services — Audit, Tax, Advisory, and More</h1>
+          <p className={styles.pageSubtitle}>
+            Business problems rarely fall neatly into one professional category. Our practice is designed for this reality — dedicated specialists, all working within the same firm.
+          </p>
         </div>
       </section>
 
