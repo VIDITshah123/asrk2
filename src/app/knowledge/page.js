@@ -43,11 +43,72 @@ export default function Knowledge() {
         </div>
       </section>
 
+      {/* Case Studies */}
+      <section className={`section ${styles.caseStudiesSection}`}>
+        <div className="container">
+          <h2 className={styles.sectionTitle}>Case Studies</h2>
+          <p className={styles.sectionSubtitle}>Real-world solutions across complex corporate, tax, and regulatory challenges.</p>
+          <div className={styles.caseStudiesGrid}>
+            <Link href="/knowledge/case-studies/corporate-structuring" className={styles.caseStudyCard}>
+              <span className={styles.caseNum}>01</span>
+              <h3 className={styles.caseTitle}>Corporate Structuring & Reorganization</h3>
+              <p className={styles.caseDesc}>Complex mergers, demergers, and corporate restructuring for listed and unlisted entities.</p>
+              <span className={styles.caseLink}>View Details →</span>
+            </Link>
+            <Link href="/knowledge/case-studies/insolvency-bankruptcy" className={styles.caseStudyCard}>
+              <span className={styles.caseNum}>02</span>
+              <h3 className={styles.caseTitle}>Insolvency & Bankruptcy Code (IBC) Matters</h3>
+              <p className={styles.caseDesc}>Resolution planning, bid preparation, and successful implementation across multiple sectors.</p>
+              <span className={styles.caseLink}>View Details →</span>
+            </Link>
+            <Link href="/knowledge/case-studies/regulatory-investigations" className={styles.caseStudyCard}>
+              <span className={styles.caseNum}>03</span>
+              <h3 className={styles.caseTitle}>Regulatory Investigations & Compliance</h3>
+              <p className={styles.caseDesc}>Successfully navigating complex regulatory scrutiny and investigation proceedings.</p>
+              <span className={styles.caseLink}>View Details →</span>
+            </Link>
+            <Link href="/knowledge/case-studies/taxation-dispute-resolution" className={styles.caseStudyCard}>
+              <span className={styles.caseNum}>04</span>
+              <h3 className={styles.caseTitle}>Taxation & Dispute Resolution</h3>
+              <p className={styles.caseDesc}>Comprehensive tax planning, compliance, and dispute resolution across direct and indirect taxes.</p>
+              <span className={styles.caseLink}>View Details →</span>
+            </Link>
+            <Link href="/knowledge/case-studies/international-transactions" className={styles.caseStudyCard}>
+              <span className={styles.caseNum}>05</span>
+              <h3 className={styles.caseTitle}>International Transactions & Investments</h3>
+              <p className={styles.caseDesc}>Cross-border structuring, FEMA compliance, and international due diligence.</p>
+              <span className={styles.caseLink}>View Details →</span>
+            </Link>
+            <Link href="/knowledge/case-studies/ipo-capital-markets" className={styles.caseStudyCard}>
+              <span className={styles.caseNum}>06</span>
+              <h3 className={styles.caseTitle}>IPO Support & Capital Markets</h3>
+              <p className={styles.caseDesc}>Pre-IPO structuring, due diligence, and regulatory compliance for public offerings.</p>
+              <span className={styles.caseLink}>View Details →</span>
+            </Link>
+            <Link href="/knowledge/case-studies/sebi-matters" className={styles.caseStudyCard}>
+              <span className={styles.caseNum}>07</span>
+              <h3 className={styles.caseTitle}>SEBI Matters & Regulatory Compliance</h3>
+              <p className={styles.caseDesc}>Specialized expertise in securities law compliance and dispute resolution.</p>
+              <span className={styles.caseLink}>View Details →</span>
+            </Link>
+            <Link href="/knowledge/case-studies/specialized-advisory" className={styles.caseStudyCard}>
+              <span className={styles.caseNum}>08</span>
+              <h3 className={styles.caseTitle}>Specialized Advisory Services</h3>
+              <p className={styles.caseDesc}>Unique expertise in niche areas requiring specialized knowledge.</p>
+              <span className={styles.caseLink}>View Details →</span>
+            </Link>
+          </div>
+          <div className={styles.viewAllWrap}>
+            <Link href="/knowledge/case-studies" className={styles.viewAllBtn}>View All Case Studies</Link>
+          </div>
+        </div>
+      </section>
+
       {/* CMS Integration Placeholder */}
       <section className={`section ${styles.cmsSection}`}>
         <div className="container">
           <div className={styles.cmsNotice}>
-            <h2>Insights & Case Studies</h2>
+            <h2>Insights & Articles</h2>
             <p>Sanity CMS integration is configured. Recent publications, market analysis, and key case studies will automatically populate here once published in the studio.</p>
           </div>
         </div>
