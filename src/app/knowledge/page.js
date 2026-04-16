@@ -39,7 +39,7 @@ export default function Knowledge() {
       <section className={styles.header}>
         <div className="container">
           <h1 className={styles.pageTitle}>Knowledge Center</h1>
-          <p className={styles.pageSubtitle}>Insights, case studies, and frequently asked questions.</p>
+          <p className={styles.pageSubtitle}>Case studies, and frequently asked questions.</p>
         </div>
       </section>
 
@@ -98,13 +98,13 @@ export default function Knowledge() {
               <span className={styles.caseLink}>View Details →</span>
             </Link>
           </div>
-          <div className={styles.viewAllWrap}>
+          {/* <div className={styles.viewAllWrap}>
             <Link href="/knowledge/case-studies" className={styles.viewAllBtn}>View All Case Studies</Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
-      {/* CMS Integration Placeholder */}
+      {/* CMS Integration Placeholder
       <section className={`section ${styles.cmsSection}`}>
         <div className="container">
           <div className={styles.cmsNotice}>
@@ -112,7 +112,7 @@ export default function Knowledge() {
             <p>Sanity CMS integration is configured. Recent publications, market analysis, and key case studies will automatically populate here once published in the studio.</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className={`section ${styles.faqSection}`}>
         <div className="container">
