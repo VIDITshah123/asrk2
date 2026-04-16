@@ -132,7 +132,7 @@ export default function Home() {
       </section>
 
       {/* Brief Overview Section */}
-      <section className={styles.overviewSection}>
+      {/* <section className={styles.overviewSection}>
         <div className={`container ${styles.overviewContainer}`}>
           <div className={styles.overviewImageSide}>
             <FadeIn>
@@ -165,7 +165,7 @@ export default function Home() {
             </FadeIn>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Embedded Single Page Application Sections */}
       <div id="about"><AboutPage /></div>
