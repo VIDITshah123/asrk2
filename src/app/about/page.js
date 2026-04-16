@@ -7,14 +7,16 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className={styles.main}>
-      {/* Hero / Parallax Header */}
-      <section className={styles.parallaxHeader}>
-        <div className={styles.parallaxImage}></div>
-        <div className={styles.parallaxContent}>
-          <div className="container">
-            <h1 className={styles.pageTitle}>Our Heritage</h1>
-            <p className={styles.pageSubtitle}>A timeless commitment to ethical practices & fiduciary excellence.</p>
-          </div>
+      {/* 3-Image Hero Strip */}
+      <section className={styles.imageStrip}>
+        <div className={styles.stripImage}>
+          <Image src="/images/conference room 1.jpeg" alt="ARSK Conference Room" fill className={styles.stripImg} priority />
+        </div>
+        <div className={styles.stripImage}>
+          <Image src="/images/library.jpeg" alt="ARSK Library" fill className={styles.stripImg} priority />
+        </div>
+        <div className={styles.stripImage}>
+          <Image src="/images/office 2.jpeg" alt="ARSK Office" fill className={styles.stripImg} priority />
         </div>
       </section>
 
